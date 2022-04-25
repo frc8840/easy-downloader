@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Downloader</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        .center {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #e7e7e7;
+            padding-top: 10px;
+            padding-bottom: 5%;
+            margin-left: 20%;
+            margin-right: 20%;
+            border-radius: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: #535353;
+        }
+
+        button {
+            background-color: #d1d1d1;
+            border: none;
+            color: black;
+            padding: 22px 48px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor:alias;
+            border-radius: 20px;
+            transition-duration: 0.16s;
+        }
+
+        button:hover {
+            background-color: #535353;
+            color: white;
+            transform: scale(1.12);
+        }
+    </style>
+    <body>
+        <div class="center">
+            <h1>Team 8840 Downloader</h1>
+            <h3>By Jaiden G</h3>
+            <button onclick="download()">Download</button>
+        </div>
+        <script>
+            function download() {
+                //open new tab with download link
+                window.open("/team_8840_project", "_blank");
+
+                window.close();
+            }
+        </script>
+    </body>
+</html>
